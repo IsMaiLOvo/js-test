@@ -12,11 +12,10 @@
 
         Neque odit inventore at incidunt quasi debitis facilis?
     </p>
-
-    <ul>
-        <li onclick="firstclick(event);">Make it a warning</li>
-        <li onclick="secoundclick(event);">Make it a tip</li>
-        <li onclick="thirdclick(event);">Make it normal</li>
+ <ul>
+        <li onclick="setClass(event, 'warning');">Make it a warning</li>
+        <li onclick="setClass(event, 'tip');">Make it a tip</li>
+        <li onclick="setClass(event, '');">Make it normal</li>
     </ul>
 
     <p class="warning">this is an example warning</p>
@@ -24,21 +23,8 @@
     <p class="tip" >this is an example tip</p>
 
 
-    <script>
-        function firstclick(event){
-            let Element = document.getElementById('mypara');
-            Element.className = 'warning';
-        }
-        function secoundclick(event){
-            let Element = document.getElementById('mypara');
-            Element.className = 'tip';
-        }
-        function thirdclick(event){
-            let Element = document.getElementById('mypara');
-            Element.className = '';
-        }
 
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
 
